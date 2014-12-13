@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="css/snowman.css" type="text/css" />
   </head>
   <body ng-app="Snowball">
+    <audio>
+      <source id="lose" src="scripts/audio/melt.wav" type="audio/wav">
+    </audio>
+    <audio>
+      <source id="win" src="scripts/audio/back.wav" type="audio/wav">
+    </audio>
     <div id="temp" ng-controller="TemperatureController">
       <div style="position: absolute;">
         <h1>Snowball Life Support</h1>

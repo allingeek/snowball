@@ -18,10 +18,12 @@ snowball.controller("TemperatureController", function($scope, $firebase) {
     if (newValue > 100) {
       $scope.data.losses++;
       $scope.data.temp = 50;
+      document.getElementById('lose').play();
     }
     if (newValue < 0) {
       $scope.data.wins++;
       $scope.data.temp = 50;
+      document.getElementById('win').play();
     }
     $scope.scalar = Math.ceil(newValue / 10);
   });
