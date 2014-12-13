@@ -14,6 +14,11 @@ snowball.controller("TemperatureController", function($scope, $firebase) {
     $scope.data.temp--;
   };
 
+  $scope.$watch('data.temp', function(newValue, oldValue) {
+    // fill in this to do whatever...
+
+  });
+
   console.log($scope);
 
 })
