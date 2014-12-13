@@ -4,11 +4,35 @@
     <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
     <script src="//popping-fire-4005.firebaseapp.com/scripts/snowball.js"></script>
+	<link rel="stylesheet" href="css/snowman.css" type="text/css" />
   </head>
   <body ng-app="Snowball">
     <div id="temp" ng-controller="TemperatureController">{{data.temp}}
       <button ng-click="warm()">Warmer</button>
       <button ng-click="cool()">Cooler</button>
     </div>
+    <center>
+      <div class="head">
+        <div class="circlehead size-{{scalar}}"></div>
+        <div class="hattop"></div>
+        <div class="hatbottom"></div>
+        <div class="circleeyel"></div>
+        <div class="circleeyer"></div>
+        <div class="circlemouth1"></div>
+        <div class="circlemouth2"></div>
+        <div class="circlemouth3"></div>
+        <div class="circlemouth4"></div>
+        <div class="circlemouth5"></div>
+        <div class="circlespark1"></div>
+        <div class="circlespark2"></div>
+        <div class="nose"></div>
+      </div>
+      <div class="circlebelly"></div>
+      <div class="circlebottom"></div>
+      <div class="circlearmleft"></div>
+      <div class="circlearmright"></div>
+      <div class="scarf1"></div>
+      <div class="scarf2"></div>
+    </center>
   </body>
 </html>

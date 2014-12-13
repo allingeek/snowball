@@ -1,8 +1,12 @@
 <html>
   <head>
-    <link rel="stylesheet" href="snowman.css" type="text/css" />
+    <link rel="stylesheet" href="css/snowman.css" type="text/css" />
   </head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <body>
+  	<form>
+		<input type="text" id="scaler"/>
+	</form>
     <center>
       <div class="head">
         <div class="circlehead"></div>
@@ -26,5 +30,16 @@
       <div class="scarf1"></div>
       <div class="scarf2"></div>
     </center>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$("#scaler").bind("change paste keyup", function() {
+			var val = $(this).val();
+			var ht = $(".hattop");
+			ht.removeClass();
+			ht.addClass("hattop "+val);
+		});		
+	});
+  </script>
   </body>
+  
 </html>
