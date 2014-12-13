@@ -1,170 +1,49 @@
-<html>
-  <head>
-    <style>body{ overflow-y: hidden; overflow-x: hidden;
-    background-image: linear-gradient(bottom, rgb(255,255,255) 51%,
-    rgb(239,252,252) 52%, rgb(150,223,245) 76%); background-image:
-    -webkit-linear-gradient(bottom, rgb(255,255,255) 51%,
-    rgb(239,252,252) 52%, rgb(150,223,245) 76%); background-image:
-    -moz-linear-gradient(bottom, rgb(255,255,255) 51%,
-    rgb(239,252,252) 52%, rgb(150,223,245) 76%); background-image:
-    -o-linear-gradient(bottom, rgb(255,255,255) 51%,
-    rgb(239,252,252) 52%, rgb(150,223,245) 76%); background-image:
-    -ms-linear-gradient(bottom, rgb(255,255,255) 51%,
-    rgb(239,252,252) 52%, rgb(150,223,245) 76%); background-color:
-    white; height:1000px; } .circlehead{ width:150px; height:150px;
-    background:white; border: 1px solid lightblue; box-shadow:
-    inset 0 -10px 25px 10px lightblue; border-radius:50%;
-    z-index:17; position:relative; top: 40px; } .hattop{
-    width:120px; height:50px; background:darkgreen; border-bottom:
-    5px solid darkred; box-shadow: inset 0 -10px 5px 1px green;
-    border-top-left-radius:50%; border-top-right-radius:50%;
-    z-index:19; position:relative; top: -145px; left:-25px;
-    border-bottom-right-radius: 30%; border-bottom-left-radius:
-    30%; -webkit-transform:rotate(-20deg);
-    -moz-transform:rotate(-20deg); } .hatbottom{ width:150px;
-    height:40px; background:green; border: 1px solid darkgreen;
-    box-shadow: inset 0 -10px 5px 1px darkgreen,0 1px 1px 0px
-    black; border-radius:50%; z-index:18; position:relative; top:
-    -165px; left:-15px; -webkit-transform:rotate(-20deg);
-    -moz-transform:rotate(-20deg); } .circleeyel{ width:20px;
-    height:20px; background:brown; box-shadow: inset 0 0 5px 1px
-    black, 0 1px 2px 1px lightblue; border-radius:50%; z-index:17;
-    position:relative; top: -160px; left:-40px; } .circleeyer{
-    width:20px; height:20px; background:brown; box-shadow: inset 0
-    0 5px 1px black, 0 1px 2px 1px lightblue; border-radius:50%;
-    z-index:18; position:relative; top: -180px; left:40px; }
-    .circlespark1{ width:8px; height:8px; background:white;
-    border-radius:50%; z-index:17; position:relative; top: -250px;
-    left:-38px; } .circlespark2{ width:8px; height:8px;
-    background:white; border-radius:50%; z-index:18;
-    position:relative; top: -258px; left:42px; } .circlemouth1{
-    width:10px; height:10px; background:brown; box-shadow: inset 0
-    0 5px 1px black, 0 1px 2px 1px lightblue; border-radius:50%;
-    z-index:18; position:relative; top: -148px; left:-28px; }
-    .circlemouth2{ width:10px; height:10px; background:brown;
-    box-shadow: inset 0 0 5px 1px black, 0 1px 2px 1px lightblue;
-    border-radius:50%; z-index:18; position:relative; top: -158px;
-    left:30px; } .circlemouth3{ width:10px; height:10px;
-    background:brown; box-shadow: inset 0 0 5px 1px black, 0 1px
-    2px 1px lightblue; border-radius:50%; z-index:18;
-    position:relative; top: -150px; left:0px; } .circlemouth4{
-    width:10px; height:10px; background:brown; box-shadow: inset 0
-    0 5px 1px black, 0 1px 2px 1px lightblue; border-radius:50%;
-    z-index:18; position:relative; top: -165px; left:-15px; }
-    .circlemouth5{ width:10px; height:10px; background:brown;
-    box-shadow: inset 0 0 5px 1px black, 0 1px 2px 1px lightblue;
-    border-radius:50%; z-index:18; position:relative; top: -175px;
-    left:15px; } .nose{ width:40px; height:20px; background:orange;
-    box-shadow:-5px 1px 3px 0px lightblue,inset 1px -5px 5px 0px
-    red; border-top-right-radius:50%;
-    border-bottom-right-radius:50%; border-top-left-radius:25%;
-    border-bottom-left-radius:25%; -webkit-transform:rotate(7deg);
-    -moz-transform:rotate(7deg); z-index:17; position:relative;
-    top: -240px; left: 17px; } .head{ position: relative; z-index:
-    20; animation:head_animation 3s infinite;
-    -webkit-animation:head_animation 3s infinite; } @keyframes
-    head_animation { 0% {transform: rotate(0deg); } 25% {transform:
-    rotate(-10deg); } 50% {transform: rotate(0deg); } 75%
-    {transform: rotate(10deg); } 100% {transform: rotate(0deg); } }
-    @-webkit-keyframes head_animation { 0% {-webkit-transform:
-    rotate(0deg); } 25% {-webkit-transform: rotate(-10deg); } 50%
-    {-webkit-transform: rotate(0deg); } 75% {-webkit-transform:
-    rotate(10deg); } 100% {-webkit-transform: rotate(0deg); } }
-    .circlebelly{ width:210px; height:200px; background:white;
-    border: 1px solid lightblue; box-shadow: inset 0 -15px 25px
-    10px lightblue; border-radius:50%; z-index:1;
-    position:relative; top: -205px; animation:belly_animation 3s
-    infinite; -webkit-animation:belly_animation 3s infinite;
-    z-index:3; } @keyframes belly_animation { 0% {transform:
-    rotate(0deg); } 25% {transform: rotate(20deg); } 50%
-    {transform: rotate(0deg); } 75% {transform: rotate(-20deg); }
-    100% {transform: rotate(0deg); } } @-webkit-keyframes
-    belly_animation { 0% {-webkit-transform: rotate(0deg); } 25%
-    {-webkit-transform: rotate(20deg); } 50% {-webkit-transform:
-    rotate(0deg); } 75% {-webkit-transform: rotate(-20deg); } 100%
-    {-webkit-transform: rotate(0deg); } } .circlebottom{
-    width:270px; height:260px; background:white; border: 1px solid
-    lightblue; box-shadow: inset 0 -20px 50px 30px lightblue;
-    border-radius:50%; z-index:0; position:relative; top: -280px;
-    animation:bottom_animation 3s infinite;
-    -webkit-animation:bottom_animation 3s infinite; z-index:2; }
-    @keyframes bottom_animation { 0% {transform: rotate(0deg); }
-    25% {transform: rotate(-30deg); } 50% {transform: rotate(0deg);
-    } 75% {transform: rotate(30deg); } 100% {transform:
-    rotate(0deg); } } @-webkit-keyframes bottom_animation { 0%
-    {-webkit-transform: rotate(0deg); } 25% {-webkit-transform:
-    rotate(-30deg); } 50% {-webkit-transform: rotate(0deg); } 75%
-    {-webkit-transform: rotate(30deg); } 100% {-webkit-transform:
-    rotate(0deg); } } .circlearmleft{ width:70px; height:200px;
-    background:white; border: 1px solid lightblue; box-shadow:
-    inset 0 -10px 25px 8px lightblue; border-radius:50%;
-    -webkit-transform:rotate(15deg); -moz-transform:rotate(15deg);
-    z-index:0; position:relative; top: -660px; left:-105px;
-    animation:arml_animation 2s infinite linear;
-    -webkit-animation:arml_animation 2s infinite linear; }
-    @keyframes arml_animation { 0% {transform: rotate(20deg); } 25%
-    {transform: rotate(30deg); } 50% {transform: rotate(40deg); }
-    75% {transform: rotate(30deg); } 100% {transform:
-    rotate(20deg); } } @-webkit-keyframes arml_animation { 0%
-    {-webkit-transform: rotate(20deg); } 25% {-webkit-transform:
-    rotate(30deg); } 50% {-webkit-transform: rotate(40deg); } 75%
-    {-webkit-transform: rotate(30deg); } 100% {-webkit-transform:
-    rotate(20deg); } } .circlearmright{ width:70px; height:200px;
-    background:white; border: 1px solid lightblue; box-shadow:
-    inset 0 -10px 25px 8px lightblue; border-radius:50%;
-    -webkit-transform:rotate(-15deg);
-    -moz-transform:rotate(-15deg); z-index:0; position:relative;
-    top: -860px; left:110px; animation:armr_animation 2s infinite
-    linear; -webkit-animation:armr_animation 2s infinite linear; }
-    @keyframes armr_animation { 0% {transform: rotate(-20deg); }
-    25% {transform: rotate(-30deg); } 50% {transform:
-    rotate(-40deg); } 75% {transform: rotate(-30deg); } 100%
-    {transform: rotate(-20deg); } } @-webkit-keyframes
-    armr_animation { 0% {-webkit-transform: rotate(-20deg); } 25%
-    {-webkit-transform: rotate(-30deg); } 50% {-webkit-transform:
-    rotate(-40deg); } 75% {-webkit-transform: rotate(-30deg); }
-    100% {-webkit-transform: rotate(-20deg); } } .scarf1{
-    width:160px; height:40px; background:red; box-shadow: inset 0px
-    0px 10px 2px darkred, 0px 1px 10px 0px black;
-    border-bottom-right-radius:50%; border-bottom-left-radius:50%;
-    border-top-right-radius: 40px; border-top-left-radius: 40px;
-    position:relative; top: -1065px; z-index: 3; } .scarf2{
-    width:40px; height:160px; background:red; box-shadow: inset 0px
-    0px 10px 2px darkred, 0px 1px 10px 0px black;
-    border-bottom-left-radius:50%; border-bottom-right-radius:30%;
-    border-top-right-radius: 10px; border-top-left-radius: 10px;
-    position:relative; top: -1107px; left:30px; z-index: 3;
-    animation:scarf_animation 3s infinite linear;
-    -webkit-animation:scarf_animation 3s infinite linear; }
-    @keyframes scarf_animation { 0% {left:25px; } 25% {left:30px; }
-    50% {left:25px; } 75% {left:20px; } 100% {left:25px; } }
-    @-webkit-keyframes scarf_animation { 0% {left:25px; } 25%
-    {left:30px; } 50% {left:25px; } 75% {left:20px; } 100%
-    {left:25px; } }</style>
-  </head>
-  <body>
+    <html>
+    <head>		
+		<link rel="stylesheet" href="snowman.css" type="text/css" />		
+    </head>
+    <body>
     <center>
-      <div class="head">
-        <div class="circlehead"></div>
-        <div class="hattop"></div>
-        <div class="hatbottom"></div>
-        <div class="circleeyel"></div>
-        <div class="circleeyer"></div>
-        <div class="circlemouth1"></div>
-        <div class="circlemouth2"></div>
-        <div class="circlemouth3"></div>
-        <div class="circlemouth4"></div>
-        <div class="circlemouth5"></div>
-        <div class="circlespark1"></div>
-        <div class="circlespark2"></div>
-        <div class="nose"></div>
-      </div>
-      <div class="circlebelly"></div>
-      <div class="circlebottom"></div>
-      <div class="circlearmleft"></div>
-      <div class="circlearmright"></div>
-      <div class="scarf1"></div>
-      <div class="scarf2"></div>
+    <div class="head">
+    <div class="circlehead">
+    </div>
+    <div class="hattop">
+    </div>
+    <div class="hatbottom">
+    </div>
+    <div class="circleeyel">
+    </div>
+    <div class="circleeyer">
+    </div>
+    <div class="circlemouth1">
+    </div>
+    <div class="circlemouth2">
+    </div>
+    <div class="circlemouth3">
+    </div>
+    <div class="circlemouth4">
+    </div>
+    <div class="circlemouth5">
+    </div>
+    <div class="circlespark1">
+    </div>
+    <div class="circlespark2">
+    </div>
+    <div class="nose">
+    </div>
+    </div>
+    <div class="circlebelly">
+    </div>
+    <div class="circlebottom">
+    </div>
+    <div class="circlearmleft">
+    </div>
+    <div class="circlearmright">
+    </div>
+    <div class="scarf1">
+    </div>
+    <div class="scarf2">
+    </div>
     </center>
-  </body>
-</html>
+    </body>
+    </html>
