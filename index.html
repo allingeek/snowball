@@ -7,10 +7,15 @@
 	<link rel="stylesheet" href="css/snowman.css" type="text/css" />
   </head>
   <body ng-app="Snowball">
-    <div id="temp" ng-controller="TemperatureController">{{data.temp}}
-      <button ng-click="warm()">Warmer</button>
-      <button ng-click="cool()">Cooler</button>
-    </div>
+    <div id="temp" ng-controller="TemperatureController">
+      <div style="position: absolute;">
+        <h1>Snowball Life Support</h1>
+        <h3>Temperature: {{data.temp}}</h3>
+        <p>Wins: {{data.wins}}
+        Losses: {{data.losses}}</p>
+        <button style="font-size: 2em; background-color: red; color: white;" ng-click="warm()">Warmer</button>
+        <button style="font-size: 2em; background-color: blue; color: white;" ng-click="cool()">Cooler</button>
+      </div>
     <center>
       <div class="head">
         <div class="circlehead size-{{scalar}}"></div>
@@ -25,14 +30,15 @@
         <div class="circlemouth5 size-{{scalar}}"></div>
         <div class="circlespark1 size-{{scalar}}"></div>
         <div class="circlespark2 size-{{scalar}}"></div>
-        <div class="nose"></div>
+        <div class="nose size-{{scalar}}"></div>
       </div>
-      <div class="circlebelly"></div>
-      <div class="circlebottom"></div>
-      <div class="circlearmleft"></div>
-      <div class="circlearmright"></div>
-      <div class="scarf1"></div>
-      <div class="scarf2"></div>
+      <div class="circlebelly size-{{scalar}}"></div>
+      <div class="circlebottom size-{{scalar}}"></div>
+      <div class="circlearmleft size-{{scalar}}"></div>
+      <div class="circlearmright size-{{scalar}}"></div>
+      <div class="scarf1 size-{{scalar}}"></div>
+      <div class="scarf2 size-{{scalar}}"></div>
     </center>
+    </div>
   </body>
 </html>
