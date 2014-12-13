@@ -213,8 +213,6 @@
     z-index:1;
     position:relative;
     top: -205px;
-    animation:belly_animation 3s infinite;
-    -webkit-animation:belly_animation 3s infinite;
     z-index:3;
     }
      
@@ -246,8 +244,6 @@
     z-index:0;
     position:relative;
     top: -280px;
-    animation:bottom_animation 3s infinite;
-    -webkit-animation:bottom_animation 3s infinite;
     z-index:2;
     }
      
@@ -282,8 +278,6 @@
     position:relative;
     top: -660px;
     left:-105px;
-    animation:arml_animation 2s infinite linear;
-    -webkit-animation:arml_animation 2s infinite linear;
     }
      
     @keyframes arml_animation
@@ -317,8 +311,6 @@
     position:relative;
     top: -860px;
     left:110px;
-    animation:armr_animation 2s infinite linear;
-    -webkit-animation:armr_animation 2s infinite linear;
     }
      
     @keyframes armr_animation

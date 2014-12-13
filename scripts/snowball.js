@@ -15,8 +15,15 @@ snowball.controller("TemperatureController", function($scope, $firebase) {
   };
 
   $scope.$watch('data.temp', function(newValue, oldValue) {
-    // fill in this to do whatever...
-
+    if (newValue > 100) {
+      $scope.data.losses++;
+      $scope.data.temp = 50;
+    }
+    if (newValue < 0) {
+      $scope.data.wins++;
+      $scope.data.temp = 50;
+    }
+    $scope.scalar = Math.ceil(newValue / 10);
   });
 
   console.log($scope);
